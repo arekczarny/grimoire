@@ -39,5 +39,8 @@ Microservice or maybe it is a module in a Monolith?
 ## Blogs / Online Articles
 [The Bounded Context Explained](http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx)
 
+## Videos
+[From legacy to DDD - Andrzej Krzywda - Boiling Frogs 2016](https://www.youtube.com/watch?time_continue=38&v=MzV2vGSTpo8)
+
 ## Examples
 [Real DDD project with hands on examples on GitHub - Jakub Pilimon](https://github.com/ddd-by-examples/library)
