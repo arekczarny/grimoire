@@ -6,3 +6,4 @@
 * [Modular Monolith](modular-monolith.md)
 * [Microservices](microservices.md)
 * [Serverless](serverless.md)
+* [Tech Startup WAR stories](tech-startup-war-stories.md)

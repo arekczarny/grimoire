@@ -32,15 +32,15 @@ What is really a Bounded Context when it comes to implementation and how it is b
 Microservice or maybe it is a module in a Monolith? 
 
 ## Books
-[Domain-Driven Design: Tackling Complexity in the Heart of Software - Eric Evans](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)<br/>
-[Hands-On Domain-Driven Design with .NET Core: Tackling complexity in the heart of software by putting DDD principles into practice - Alexey Zimarev](https://www.amazon.com/Hands-Domain-Driven-Design-NET-ebook/dp/B07C5WSR9B/ref=sr_1_1?crid=KJLST55P7X6P&keywords=hands-on+domain-driven+design+with+.net+core&qid=1563642184&s=books&sprefix=hands-on+domain+dri%2Cstripbooks-intl-ship%2C300&sr=1-1)<br/>
-[Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F# - Scott Wlaschin](https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven-ebook/dp/B07B44BPFB)
+* [Domain-Driven Design: Tackling Complexity in the Heart of Software - Eric Evans](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)<br/>
+* [Hands-On Domain-Driven Design with .NET Core: Tackling complexity in the heart of software by putting DDD principles into practice - Alexey Zimarev](https://www.amazon.com/Hands-Domain-Driven-Design-NET-ebook/dp/B07C5WSR9B/ref=sr_1_1?crid=KJLST55P7X6P&keywords=hands-on+domain-driven+design+with+.net+core&qid=1563642184&s=books&sprefix=hands-on+domain+dri%2Cstripbooks-intl-ship%2C300&sr=1-1)<br/>
+* [Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F# - Scott Wlaschin](https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven-ebook/dp/B07B44BPFB)
 
 ## Blogs / Online Articles
-[The Bounded Context Explained](http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx)
+* [The Bounded Context Explained](http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx)
 
 ## Videos
-[From legacy to DDD - Andrzej Krzywda - Boiling Frogs 2016](https://www.youtube.com/watch?time_continue=38&v=MzV2vGSTpo8)
+* [From legacy to DDD - Andrzej Krzywda - Boiling Frogs 2016](https://www.youtube.com/watch?time_continue=38&v=MzV2vGSTpo8)
 
 ## Examples
-[Real DDD project with hands on examples on GitHub - Jakub Pilimon](https://github.com/ddd-by-examples/library)
+* [Real DDD project with hands on examples on GitHub - Jakub Pilimon](https://github.com/ddd-by-examples/library)
