@@ -1,5 +1,10 @@
 # Domain Driven Design (DDD) 
 
+## Big Picture Event Storming
+
+## Process Level Event Storming
+
+
 ## Bounded Context
 Bounded Context - Bounded as it has clearly stated boundaries \(borders, lines\). Inside we have Domain Model.
 Domain Model is not being shared between other Bounded Contexts. If there is a need to communicate between Bounded 
@@ -30,6 +35,49 @@ to solve their problems.
 ### Deployment Architecture & Bounded Context.
 What is really a Bounded Context when it comes to implementation and how it is being deployed? Is that a single 
 Microservice or maybe it is a module in a Monolith? 
+
+### Validation of Bounded Context's boundaries
+
+####Heuristics
+1. Context Autonomy
+* Does our Context can "make decisions" on its own?
+* Does our Context must "ask" other Bounded Contexts for permission to "make decision"?  
+Bounded Context must be self sufficient and must be able to make decisions on its own. If that is not the case then
+it might indicate that our decision on selecting Bounded Context is wrong and we have too much level of granularity.
+
+2. Number of Bounded Contexts in business process
+* How many Bounded Contexts plays a part in a single business process?
+The least BC in the single business process the better. If there are many BCs involved that must integrate with each
+other and especially when those BCs are calling each other several times that is sign of a bad architecture decisions. 
+When caching, repeated calls comes into play that is yet another technical way to cover the problem.   
+This might mean that the boundaries are incorrect and needs to be revisited.
+
+3. Look for data/information that change at the same time
+If in the design some data *must* change in two different places (BCs) at the same time (Atomic change) it means that
+there should be only *one* Bounded Context made out of those two.
+
+4. Look for data/information that are being used together
+If there is a need for e.g. two BCs to query each other for a data this needs to be revised. We could try to look at
+the implementation from the different perspective and replace existing BCs with the new ones that will have all what
+they require within it.
+
+5. Creating Bounded Context helper questions
+- What is BC responsibility?
+If there are many sentences used to answer the question then it might mean that the BC does too much and needs a split.
+- How many integrations does the BC have?
+How many and why it has them also to what internal/external systems those integrations are being made.
+Integration to an external system limits BCs autonomy much more than an integration to internal system.
+- Is there a single source of truth for specific information/concept during a business process?
+If there is a BC that is an owner of the information/concept if it is not then we have lost some BC and we have to  
+add it.
+- Does schizophrenic BC exist?
+When BC needs to have some conditional logic to figure out "who" it is. Example when BC has a logic to do certain
+actions for Individual Client and Corporate Client. In that case there should be two different BCs one for Individual
+and one for Corporate Client handling.
+- Look for anti-requirements?
+Anti-requirement is a requirement that does not have any Business value \(sense\). Look for rules that could break our
+BCs boundaries by asking questions to the end user about requirements that could possibly cross boundaries of our BCs.
+
 
 ## Books
 * [Domain-Driven Design: Tackling Complexity in the Heart of Software - Eric Evans](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)<br/>
