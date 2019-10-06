@@ -46,7 +46,8 @@ C4 conists of following Diagrams:
 * C3 - Component Diagram - for technical user working on the System.
 * C4 - Class Diagram - UML (optional) standard stuff done the old school way
 
-Example C4 diagram <img src="/pics/c4-example.png" width="1920" height="1020" />
+Example C4 diagram 
+<img src="/pics/c4-example.png" width="640" height="480" />
 
 #### C4 Tutorial
 * [C4 Official FAQ](https://c4model.com/#faq)
