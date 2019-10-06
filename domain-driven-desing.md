@@ -93,6 +93,7 @@ BCs boundaries by asking questions to the end user about requirements that could
 * [Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F# - Scott Wlaschin](https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven-ebook/dp/B07B44BPFB)
 
 ## Videos
+* [Language in Context: And How Do We Go Forward From Here? - Eric Evans](https://www.youtube.com/watch?v=kjMZVYdwucs)
 * [From legacy to DDD - Andrzej Krzywda - Boiling Frogs 2016](https://www.youtube.com/watch?time_continue=38&v=MzV2vGSTpo8)
 
 ## Examples
