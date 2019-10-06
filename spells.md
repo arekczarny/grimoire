@@ -39,14 +39,14 @@
 ### User / Group commands 
 
 * cut -d: -f1 /etc/passwd --> lists all users
-* useradd ĖM Ėg engageone Ėd /opt/engageone  engageone --> creates engageone user with /opt/engageone as home
+* useradd ĖM Ėg linuxuser Ėd /opt/linuxuser  linuxuser --> creates linuxuser user with /opt/linuxuser as home
 
 * userdel USERANME --> removes user from the sytem
-* usermod ĖaG wheel engageone --> add user engageone to wheel group
+* usermod ĖaG wheel linuxuser --> add user linuxuser to wheel group
 * gpasswd -a user group --> adds user to a group
 * gpasswd -d user group --> removes user froma group
 
-* groupadd engageone --> adds engageone group
+* groupadd linuxuser --> adds linuxuser group
 
 * sudo chgrp -R tomcat /opt/tomcat --> Give the tomcat group ownership over the entire installation directory:
 * sudo chmod -R g+r conf  --> give the tomcat group read access to the conf directory and all of its contents
@@ -81,7 +81,7 @@
 
 * zip -r -s MaximumSize ArchiveName.zip FolderName/
 * tar xvzf maven.tar.gz -C /var/jenkins_home/apache-maven/ -> untar to specified location
-* unzip /usr/share/EngageOne_Server-4.4.6.634-Procodia-dev.zip -d /home/ec2-user/tmp/build/
+* unzip /usr/share/zip_file.zip -d /home/linuxuser/tmp/build/
 
 ### Checking TLS connections to server
 
