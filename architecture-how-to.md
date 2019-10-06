@@ -47,6 +47,7 @@ C4 conists of following Diagrams:
 * C4 - Class Diagram - UML (optional) standard stuff done the old school way
 
 Example C4 diagram
+
 ![Image Link2](https://raw.githubusercontent.com/arekczarny/grimoire/master/pics/c4-example.png "C4 Example")
 
 #### C4 Tutorial
