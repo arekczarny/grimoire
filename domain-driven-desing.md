@@ -2,6 +2,9 @@
 
 ## Big Picture Event Storming
 
+### Examples
+* [Awesome Eventstorming - Mariusz Gil](https://github.com/mariuszgil/awesome-eventstorming)
+
 ## Process Level Event Storming
 
 
@@ -78,14 +81,16 @@ and one for Corporate Client handling.
 Anti-requirement is a requirement that does not have any Business value \(sense\). Look for rules that could break our
 BCs boundaries by asking questions to the end user about requirements that could possibly cross boundaries of our BCs.
 
+### Blogs / Online Articles
+* [The Bounded Context Explained](http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx)
+
 
 ## Books
-* [Domain-Driven Design: Tackling Complexity in the Heart of Software - Eric Evans](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)<br/>
-* [Hands-On Domain-Driven Design with .NET Core: Tackling complexity in the heart of software by putting DDD principles into practice - Alexey Zimarev](https://www.amazon.com/Hands-Domain-Driven-Design-NET-ebook/dp/B07C5WSR9B/ref=sr_1_1?crid=KJLST55P7X6P&keywords=hands-on+domain-driven+design+with+.net+core&qid=1563642184&s=books&sprefix=hands-on+domain+dri%2Cstripbooks-intl-ship%2C300&sr=1-1)<br/>
+* [Hands-On Domain-Driven Design with .NET Core: Tackling complexity in the heart of software by putting DDD principles into practice - Alexey Zimarev](https://www.amazon.com/Hands-Domain-Driven-Design-NET-ebook/dp/B07C5WSR9B/ref=sr_1_1?crid=KJLST55P7X6P&keywords=hands-on+domain-driven+design+with+.net+core&qid=1563642184&s=books&sprefix=hands-on+domain+dri%2Cstripbooks-intl-ship%2C300&sr=1-1)
+* [Implementing Domain-Driven Design - Vaughn Vernon](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577)
+* [Domain-Driven Design: Tackling Complexity in the Heart of Software - Eric Evans](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)
+* [Domain Driven Design Quickly](https://www.infoq.com/minibooks/domain-driven-design-quickly/)
 * [Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F# - Scott Wlaschin](https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven-ebook/dp/B07B44BPFB)
-
-## Blogs / Online Articles
-* [The Bounded Context Explained](http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx)
 
 ## Videos
 * [From legacy to DDD - Andrzej Krzywda - Boiling Frogs 2016](https://www.youtube.com/watch?time_continue=38&v=MzV2vGSTpo8)

@@ -29,6 +29,33 @@ Best practices and examples on how to create and maintain Architecture Decision 
 * [Jenkins CI metrics plugin](https://github.com/jenkinsci/metrics-plugin)
 * [ADR Tools on GitHub \(1663 stars\)](https://github.com/npryce/adr-tools/tree/master/src)
 
+## Architecture Modeling Tools
+
+### C4
+
+C4 consist of following parts (abstractions):
+* Code - class / function
+* Component - set of classes that together form a contract
+* Container - run environment for Components e.g. application server / web server / database
+              communication between containers done via API (SOAP/REST/TCP/Messaging)
+* System - Set of containers forming single system e.g. Browser + App Server + Database
+
+C4 conists of following Diagrams:
+* C1 - Context Diagram - who is using the system, why it was created, what integrations it has what those integrations do
+* C2 - Container Diagram - Container diagram description uses (name, responsibility, technology, interaction, protocol)
+* C3 - Component Diagram - for technical user working on the System.
+* C4 - Class Diagram - UML (optional) standard stuff done the old school way
+
+Example C4 diagram <img src="/pics/c4-example.png" width="1920" height="1020" />
+
+#### C4 Tutorial
+* [C4 Official FAQ](https://c4model.com/#faq)
+* [Structurizr GUI tutorial](https://www.youtube.com/watch?v=OjRB8ol3JnI)
+* [Strucrurizr diagram in Java code](https://github.com/structurizr/java/tree/master/structurizr-examples/src/com/structurizr/example)
+
+#### C4 Tools
+* [C4 Plugin for draw.io](https://github.com/tobiashochguertel/c4-draw.io)
+
 ## Architecture general references
 
 ### Conway Law
@@ -50,5 +77,7 @@ programmatic use of software tools e.g. Maven modules).
 * [TICK Stack](https://www.thoughtworks.com/radar/platforms/tick-stack)
 * [Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/index.html)
 * [How to learn Software Design & Architecture](https://khalilstemmler.com/articles/software-design-architecture/full-stack-software-design/)
+* [Less is more](http://www.bredemeyer.com/pdf_files/MinimalistArchitecture.PDF)
+* [Who needs an Architect \(Fowler\)](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
 
 ### Videos
