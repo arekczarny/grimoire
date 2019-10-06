@@ -49,7 +49,8 @@ C4 conists of following Diagrams:
 Example C4 diagram<br/> 
 <img src="/pics/c4-example.png" width="1020" height="780" />
 <br>
-![Image Test](/pics/c4-example.png=192x102)
+![Image Test](/pics/c4-example.png=192x102)<br/>
+[Image Test](/pics/c4-example.png=192x102)<br/>
 
 #### C4 Tutorial
 * [C4 Official FAQ](https://c4model.com/#faq)
