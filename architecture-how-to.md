@@ -49,6 +49,10 @@ C4 conists of following Diagrams:
 Example C4 diagram<br/> 
 <img src="/pics/c4-example.png" width="1020" height="780" />
 <br>
+[Image Link](../pics/c4-example.png )
+
+![Image Link2](https://github.com/arekczarny/grimoire/blob/master/pics/c4-example.png "C4 Example")
+
 #### C4 Tutorial
 * [C4 Official FAQ](https://c4model.com/#faq)
 * [Structurizr GUI tutorial](https://www.youtube.com/watch?v=OjRB8ol3JnI)
