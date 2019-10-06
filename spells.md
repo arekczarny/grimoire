@@ -4,17 +4,15 @@
 
 ### Administration commands
 
-sudo -l --> lists all privileges from /etc/sudoers for a user<br/> 
+ sudo -l --> lists all privileges from /etc/sudoers for a user<br/> 
 sudo -s --> inherits your current user environment<br/> 
 sudo -i --> gives clean environment, like you get just after login<br/>
-
 sudo update-alternatives --config editor -> changes visudo editor<br/>
-
 sudo visudo  -> launches the /etc/sudoers file in an editor<br/>
 sudo visudo -f /etc/sudoers.d/file_to_edit  -> launches any other sudoers file in visudo<br/>
 
 SUID<br/>
-http://www.linuxnix.com/suid-set-suid-linuxunix/<br/>
+* [SUID](http://www.linuxnix.com/suid-set-suid-linuxunix/)
 
 -- Linux LIMITS checking and changing of them
 
