@@ -56,6 +56,11 @@ C4 conists of following Diagrams:
 #### C4 Tools
 * [C4 Plugin for draw.io](https://github.com/tobiashochguertel/c4-draw.io)
 
+### UML
+
+#### Tutorials
+* [UML Basics - Polish](https://www.samouczekprogramisty.pl/podstawy-uml/)
+
 ## Architecture general references
 
 ### Conway Law
