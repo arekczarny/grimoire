@@ -95,3 +95,31 @@
 ## Git
 
 ## Maven
+
+* mvn help:effective-pom    --> shows what pom has and what was inherited from parent pom
+
+### Dependencies related stuff
+
+* mvn -o dependency:list -DincludeScope=compile -DoutputFile=dependencies.txt -DexcludeTransitive=true  --> list of dependencies
+* mvn -o dependency:tree -DoutputType=text -DoutputFile=text.txt -Dverbose  --> List of dependeny trees
+* mvn install:install-file -Dfile="X:\some_file-1.0.0.jar" -DgroupId="com.example" 
+-DartifactId=some-artifact -Dversion="1.0.0" -Dpackaging=jar  --> Install 3rd Party dependency to local maven repo
+
+### Maven Release Plugin
+
+* mvn -P arekTest release:clean   --> clean the release stuff
+* mvn -P arekTest release:rollback  --> rollbacks all the changes
+* mvn clean release:prepare release:perform -P arekTest -DdevelopmentVersion=1.0.0-SNAPSHOT -DreleaseVersion=1.0.0.Release 
+-DskipTests=true -DdryRun=false -DignoreSnapshots=true -DscmCommentPrefix="Some Comment"
+
+### Maven Deploy using deploy-plugin
+
+* mvn clean install
+* mvn -P release deploy -DskipTests -Dmaven.install.skip=true
+
+### Maven update poms versions
+
+* mvn -P release versions:set -DnewVersion=1.1.0-SNAPSHOT -DgenerateBackupPoms=false  
+* mvn versions:revert
+
+* mvn --batch-mode -P release release:update-versions -DdevelopmentVersion=1.1.0-SNAPSHOT
