@@ -1,6 +1,25 @@
 # Microservices
 
 ## Definition
+Microservices quick description of characteristics:
+* implementing SOA pattern
+* through Microservices you eliminate central points \(of failure ESB\) 
+* you ensure loose coupling of components
+* cloud native solution 
+
+**Disadvantages**
+* freedom to select any technology for implementation. Too many different tech stacks might lead to total chaos
+* high technological complexity of the solutions based on Microservices
+* very complicated infrastructure and its management
+* much harder analysis of communication flows \(harder than in e.g. Monolith), additional patterns, tools required to
+make some sensible observation of Microservices communication 
+
+**When**
+* autonomy is the must have
+* team\(s\) have required experience to work with selected technology stack and set of tools for the job
+* big need for fast and high scalability of the system being build \(already in production\)
+
+
 
 ## Videos
 * [Microservices: A Taxonomy - Stefan Tilkov](https://www.youtube.com/watch?time_continue=6&v=iS-f1PfBSzw)
