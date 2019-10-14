@@ -123,3 +123,37 @@
 * mvn versions:revert
 
 * mvn --batch-mode -P release release:update-versions -DdevelopmentVersion=1.1.0-SNAPSHOT
+
+## MacOS
+
+### Shortcuts
+
+* cmd+shift+3 --> saves whole screen to file on Desktop
+* cmd+shift+4 --> saves selected stuff to file on Desktop
+* cmd+shift+5 --> opens setting window with recording option
+* ctrl+cmd+shift+4 --> copies selected stuff to Clipboard
+
+## AWS (CLI, SDK)
+
+### EC2
+* aws ec2 start-instances --instance-ids i-0ac8092a3dc1e87d1 --region us-east-1  --> starts an instance
+* aws ec2 stop-instances --instance-ids i-0bd1da4bba7cd8a94 --region us-east-1  --> stops an instance
+* aws ec2 describe-instances --region us-east-1 --filters "Name=instance-id,Values=i-5ee54ba6"
+* aws ec2 describe-instances --region us-east-1 --filters "Name=tag:DummyTag,Values=Shared"  --> filters out instances with tag value
+* aws ec2 describe-instances --region us-east-1 --filters "Name=instance-state-code,Values=16" > running.txt  --> running instances
+
+### LOAD BALANCER
+* aws elbv2 describe-load-balancers --> describes all LBs on your account
+* aws elbv2 describe-load-balancers --load-balancer-arns arn:aws:elasticloadbalanci --> describe ALB 
+* aws elbv2 describe-listeners --listener-arns arn:aws:tlalal --> describe ALB listeners
+* aws elbv2 describe-listeners --listener-arns arn:aws:elasticloadbalancing:us-east-1:366703173583:listener/app/LinuxClustered656-LB/ded2e0f3e2c9e3e8/c0aa6620121a7c6d --> describe ALB listeners
+
+* aws elbv2 describe-listeners --load-balancer-arn arn:aws:elasticloadb --region us-east-1 --output json --query 'Listeners'
+* aws elbv2 describe-listeners --load-balancer-arn arn:aws:elasticloadbalancing:us-east-1 --region us-east-1 --output json --query 'Listeners[0].ListenerArn'
+
+* aws elbv2 describe-target-groups --load-balancer-arn arn:aws:elasticloadbalancing:us-east-1:
+
+* aws elbv2 describe-target-health --target-group-arn arn:aws:elasticloadbalancing:us-east-1:
+
+### STACKS
+* aws cloudformation list-stacks --stack-status-filter CREATE_COMPLETE --region us-east-1  --> list stacks

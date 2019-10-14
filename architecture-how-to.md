@@ -115,3 +115,8 @@ programmatic use of software tools e.g. Maven modules).
 * [Who needs an Architect \(Fowler\)](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
 
 ### Videos
+
+## APIs best practices 
+
+### Blogs / Online Articles
+[APIs as infrastructure: future-proofing Stripe with versioning](https://stripe.com/en-pl/blog/api-versioning)

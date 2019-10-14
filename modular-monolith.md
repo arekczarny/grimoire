@@ -41,7 +41,27 @@ rest of the system. When single module is being fixed or changed only this modul
 * much harder to keep the whole solution consistent
 * limited usage of foreign keys
 
+### Examples
+* [Modular Monolith with DDD](https://github.com/kgrzybek/modular-monolith-with-ddd)
+
 ## Breaking apart the Monolith
 
 ### References
 * [Building common libraries that aren't garbage (PL) - Piotr Betkier - Confitura 2016](https://www.youtube.com/watch?v=jLYMa5E4-z4&feature=youtu.be)
+
+## Enterprise Service Bus
+
+ESB is a SOA architecture style implementation. It usually is a integration bus that integrates all services in the organization.
+Because of that it needs to provide wide variety of connectors that can be used to integrate many different sub-systems.
+
+ESB is very scalable and it is a complex solution that provides security, logging and tracing, configurability, auditing etc.
+ESB is an orchestrator for the whole communication. There is a lot of "knowledge" in the bus as it needs to orchestrate
+the whole communication which is being triggered by request sent to it. 
+To facilitate communication between many different clients ESB uses Canonical Data Model \(Common Data Model\). 
+It also does share client libraries that should be used by the client apps to communicate with the bus. Those libraries
+consist of CDM.
+
+High price for the solution. It is a bottle neck and a single point of failure in the system. It allows nicely to scale 
+out services but it does not scale itself. Also when it fails all services might work properly but the communication between 
+them will just not work at all. In the end ESB becomes a massive Monolith which inherits all its disadvantages being not
+maintainable and requires massive effort to make any changes to it. 

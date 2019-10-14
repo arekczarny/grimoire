@@ -93,8 +93,10 @@ BCs boundaries by asking questions to the end user about requirements that could
 * [Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F# - Scott Wlaschin](https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven-ebook/dp/B07B44BPFB)
 
 ## Videos
+* [DDD playlist youtube - great content on DDD in one place](https://www.youtube.com/playlist?list=PLC63ae3uCHHYZ2hb_pc6VlQabpi1DS7Yf&app=desktop)
 * [Language in Context: And How Do We Go Forward From Here? - Eric Evans](https://www.youtube.com/watch?v=kjMZVYdwucs)
 * [From legacy to DDD - Andrzej Krzywda - Boiling Frogs 2016](https://www.youtube.com/watch?time_continue=38&v=MzV2vGSTpo8)
 
 ## Examples
 * [Real DDD project with hands on examples on GitHub - Jakub Pilimon](https://github.com/ddd-by-examples/library)
+* [Modular Monolith with DDD](https://github.com/kgrzybek/modular-monolith-with-ddd)
