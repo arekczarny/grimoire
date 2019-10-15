@@ -142,6 +142,8 @@
 * aws ec2 describe-instances --region us-east-1 --filters "Name=tag:DummyTag,Values=Shared"  --> filters out instances with tag value
 * aws ec2 describe-instances --region us-east-1 --filters "Name=instance-state-code,Values=16" > running.txt  --> running instances
 
+* aws ec2 describe-instances --filters 'Name=tag:Name,Values=dev-server-*' --output text --query 'Reservations[*].Instances[*].InstanceId'
+
 ### LOAD BALANCER
 * aws elbv2 describe-load-balancers --> describes all LBs on your account
 * aws elbv2 describe-load-balancers --load-balancer-arns arn:aws:elasticloadbalanci --> describe ALB 
@@ -157,3 +159,9 @@
 
 ### STACKS
 * aws cloudformation list-stacks --stack-status-filter CREATE_COMPLETE --region us-east-1  --> list stacks
+* aws cloudformation list-stack-instances --stack-set-name lifesaver
+
+### S3 bucket
+
+* aws s3api list-buckets --query "Buckets[].Name" --> list buckets on S3
+* aws s3 ls s3://pbeo-files --recursive --> list files in the folder with recursion
