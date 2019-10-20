@@ -2,6 +2,11 @@
 
 ## Linux
 
+## SSH connection & file operations
+
+* ssh -i ~/.ssh/id_rsa.pub USER@SERVER
+* scp -i ~/.ssh/id_rsa.pub FILENAME USER@SERVER:/home/USER/FILENAME
+
 ### Administration commands
 
 * sudo -l --> lists all privileges from /etc/sudoers for a user
@@ -94,6 +99,17 @@
 
 ## Git
 
+### Repository Operations
+* git remote -v --> view existing remotes
+* git remote rename origin old_origin --> Change remote name from 'origin' to 'old_origin'
+* git remote set-url origin git@server:group/project/project.git
+* git remote set-url origin https://server:group/project/project.git
+* git remote add origin git@server:group/project/project.git
+* git remote remove origin
+
+### Blogs, adivces
+* [How to mirror a git repo to a new remote](https://makandracards.com/makandra/48818-how-to-mirror-a-git-repo-to-a-new-remote)
+
 ## Maven
 
 * mvn help:effective-pom    --> shows what pom has and what was inherited from parent pom
@@ -144,6 +160,9 @@
 
 * aws ec2 describe-instances --filters 'Name=tag:Name,Values=dev-server-*' --output text --query 'Reservations[*].Instances[*].InstanceId'
 
+### Security groups
+* aws ec2 describe-security-groups --group-names LDAP
+
 ### LOAD BALANCER
 * aws elbv2 describe-load-balancers --> describes all LBs on your account
 * aws elbv2 describe-load-balancers --load-balancer-arns arn:aws:elasticloadbalanci --> describe ALB 
@@ -162,6 +181,8 @@
 * aws cloudformation list-stack-instances --stack-set-name lifesaver
 
 ### S3 bucket
+
+* aws s3 cp <file_name> s3://<bucket_name>/<folder_name>/<file_name>
 
 * aws s3api list-buckets --query "Buckets[].Name" --> list buckets on S3
 * aws s3 ls s3://pbeo-files --recursive --> list files in the folder with recursion

@@ -1,5 +1,33 @@
 # Architecture Done Right
 
+## How to select an Architecture for a specific software system
+
+How to go through a known toolset for specifying correct architecture for the computer system.
+Following steps and their output in form of code or documentation will aid this process: 
+
+### Describe Architecture Drivers
+
+* Limitations --> specify all limitations that the build system will be constrained with
+* Quality attributes --> Those are **NONE** functional drivers that could cost a lot when moved to later phases of 
+system development. Some examples could be: scalability, observability, security, load e.g. 100-150 rps,
+SLA system accessibility 99,99% that is 4m 23s of system downtime per month.
+
+### Select Architecture Style for System
+
+Based od the drivers described in previous section select specific Architecture Style for system that will be build.
+Those could be:
+1. Monolith
+2. Modular Monolith
+3. Microservices
+etc.
+
+Document advantages and disadvantages of selected Architecture style so everyone in the team and later on people joining 
+the team have no doubts that the style is correctly selected and all pros and cons of the selection were evaluated.
+
+### Document and visualize selected Architecture
+
+
+
 ## Architecture styles
 Styles of Software Architecture their advantages and problems.
 
@@ -91,6 +119,32 @@ C4 conists of following Diagrams:
 * [UML Basics - Polish](https://www.samouczekprogramisty.pl/podstawy-uml/)
 
 ## Architecture general references
+
+### Autonomy
+
+Types of Autonomy in Software developent:
+1. Business
+2. Technical
+3. Technological
+
+**Business Autonomy**
+
+* Allows to develop software products independently of each other
+* Different products have different SDLC and calendar of events (releases, planning etc.)
+* Higher product specialization directly influences code complexity or rather less of code complexity and more readable
+code
+
+**Technical Autonomy**
+
+Technical Autonomy enables product teams to separate components depending on:
+1. the need to scale
+2. specific security requirements 
+
+**Technological Autonomy**
+
+* Enables teams to select the best tools for a given problem
+* Enables teams to select different programming languages
+* Enables to select different Operating systems
 
 ### Conway Law
 Organizations which design systems ... are constrained to produce designs which are copies of the communication

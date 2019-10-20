@@ -7,5 +7,6 @@
 * [Microservices](microservices.md)
 * [Serverless](serverless.md)
 * [Test Driven Development](tdd.md)
+* [AWS Cloud](aws.md)
 * [Userful Spells](spells.md)
 * [Tech Startup WAR stories](tech-startup-war-stories.md)
