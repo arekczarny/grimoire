@@ -83,6 +83,7 @@ BCs boundaries by asking questions to the end user about requirements that could
 
 ### Blogs / Online Articles
 * [The Bounded Context Explained](http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx)
+* [BoundedContext - Martin Fowler](https://www.martinfowler.com/bliki/BoundedContext.html)
 
 
 ## Books
