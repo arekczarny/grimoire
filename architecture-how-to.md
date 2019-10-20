@@ -9,17 +9,18 @@ Following steps and their output in form of code or documentation will aid this 
 
 * Limitations --> specify all limitations that the build system will be constrained with
 * Quality attributes --> Those are **NONE** functional drivers that could cost a lot when moved to later phases of 
-system development. Some examples could be: scalability, observability, security, load e.g. 100-150 rps,
+system development. Some examples could be: scalability, observability, security, load e.g. 100-150 rps, 
 SLA system accessibility 99,99% that is 4m 23s of system downtime per month.
 
 ### Select Architecture Style for System
 
 Based od the drivers described in previous section select specific Architecture Style for system that will be build.
 Those could be:
-1. Monolith
-2. Modular Monolith
-3. Microservices
-etc.
+
+    1. Monolith
+    2. Modular Monolith
+    3. Microservices
+    etc.
 
 Document advantages and disadvantages of selected Architecture style so everyone in the team and later on people joining 
 the team have no doubts that the style is correctly selected and all pros and cons of the selection were evaluated.
