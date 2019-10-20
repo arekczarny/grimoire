@@ -8,8 +8,8 @@ Following steps and their output in form of code or documentation will aid this 
 ### Describe Architecture Drivers
 
 * Limitations --> specify all limitations that the build system will be constrained with
-* Quality attributes --> Those are **NONE** functional drivers that could cost a lot when moved to later phases of 
-system development. Some examples could be: scalability, observability, security, load e.g. 100-150 rps, 
+* Quality attributes --> Those are **NONE** functional drivers that could cost a lot when moved to later phases of
+system development. Some examples could be: scalability, observability, security, load e.g. 100-150 rps,
 SLA system accessibility 99,99% that is 4m 23s of system downtime per month.
 
 ### Select Architecture Style for System
