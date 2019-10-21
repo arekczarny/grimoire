@@ -2,6 +2,10 @@
 
 ## Linux
 
+* sudo ln -s /opt/maven/bin/mvn /usr/bin/mvn
+* sudo ln -s /usr/share/groovy/groovy-2.5.7/bin/groovy /usr/bin/groovy
+
+
 ## SSH connection & file operations
 
 * ssh -i ~/.ssh/id_rsa.pub USER@SERVER

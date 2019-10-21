@@ -113,6 +113,8 @@ a need to change others.
 
 ### Hexagonal Architecture
 
+
+
 ### Pipes and Filters Architecture
 
 ### Micro core Architecture 
@@ -238,6 +240,8 @@ programmatic use of software tools e.g. Maven modules).
 * [Exploring the Duality between Product and Organizational Architectures](https://hbswk.hbs.edu/item/exploring-the-duality-between-product-and-organizational-architectures-a-test-of-the-mirroring-hypothesis)
 
 ### Books
+* [Design It!: From Programmer to Software Architect](https://www.amazon.com/dp/1680502093/)
+[Building Evolutionary Architectures: Support Constant Change](https://www.amazon.com/dp/1491986360)
 
 ### Blogs / Online Articles
 * [Software Architecute is Overrated](https://blog.pragmaticengineer.com/software-architecture-is-overrated/)
