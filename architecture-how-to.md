@@ -113,8 +113,6 @@ a need to change others.
 
 ### Hexagonal Architecture
 
-
-
 ### Pipes and Filters Architecture
 
 ### Micro core Architecture 
@@ -122,6 +120,15 @@ a need to change others.
 ### How to select specific Application Architecture style
 
 ### Testing Strategy based on selected Application Architecture style
+
+### CQRS - Command Query Responsibility Segregation
+
+Will be used for local BCs.
+
+#### Blogs / Online Articles
+* [CQRS Documents by Greg Young](https://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf)
+* [Race Conditions Don’t Exist - Udi Dahan](http://udidahan.com/2010/08/31/race-conditions-dont-exist/)
+
 
 ### Books
 * [Design It!: From Programmer to Software Architect](https://www.amazon.com/dp/1680502093/)
@@ -151,6 +158,34 @@ Best practices and examples on how to create and maintain Architecture Decision 
 * [Repository of ADRs templates and howto on GitHub \(1500 start\)](https://github.com/joelparkerhenderson/architecture_decision_record) \
 * [Repository of example ARDs on GitHub \(116 stars\)](https://github.com/arachne-framework/architecture)
 * [Mediawiki ADR examples on GitHub \(27 starts)](https://github.com/wikimedia/mediawiki-extensions-Popups/tree/master/docs/adr)
+
+## Estimates (how to do them and when they really work)
+
+Two main movements when it comes to Estimating or Not
+1. \#NoEstimates
+Estimates are not very precise. Delivered value is much more important than the cost of it. Estimation lead to dysfunctional
+behaviour (too optimistic size that when not met leads to over hours, cutting on quality or event functionality).
+
+2. \#YesEstimates
+Estimates can be precise under certain conditions. Estimation of cost of making something is important for the business.
+No Estimates makes Business people very uncomfortable and sort of alienated.  
+
+### When Estimation works
+* when we have done similar thing in the past
+* when we understand how exactly the thing we want to build works
+* when scope of work is small
+* when during work requirements does NOT change
+* when we don't have to wait for other people, teams work (our word does not depend on the result of others work)
+
+
+
+### Blogs / Online Articles
+* [Debiasing Training Improves Decision Making in the Field](https://journals.sagepub.com/doi/abs/10.1177/0956797619861429)
+
+### Videos
+* [12 Cognitive Biases Explained - How to Think Better and More Logically Removing Bias](https://www.youtube.com/watch?v=wEwGBIr_RIw)
+* [James Shore - ESTIMATES OR NO ESTIMATES?](https://vimeo.com/145049619)
+* [#NoEstimates - Allen Holub](https://www.youtube.com/watch?v=A1Bsq8HbaAY)
 
 ## Architecture Metrics
 
@@ -224,6 +259,9 @@ Technical Autonomy enables product teams to separate components depending on:
 
 ### Event Driven Systems
 
+### Examples
+*[On Eventual Consistency and REST](http://pillopl.github.io/eventual-consistency-and-rest/)
+
 #### Books
 * [Designing Event-Driven Systems - Ebook Online](https://www.confluent.io/wp-content/uploads/confluent-designing-event-driven-systems.pdf)
 
@@ -241,7 +279,8 @@ programmatic use of software tools e.g. Maven modules).
 
 ### Books
 * [Design It!: From Programmer to Software Architect](https://www.amazon.com/dp/1680502093/)
-[Building Evolutionary Architectures: Support Constant Change](https://www.amazon.com/dp/1491986360)
+* [Building Evolutionary Architectures: Support Constant Change](https://www.amazon.com/dp/1491986360)
+* [Patterns of Enterprise Application Architecture - Martin Fowler](https://martinfowler.com/books/eaa.html)
 
 ### Blogs / Online Articles
 * [Software Architecute is Overrated](https://blog.pragmaticengineer.com/software-architecture-is-overrated/)

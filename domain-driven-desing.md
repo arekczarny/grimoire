@@ -2,11 +2,54 @@
 
 ## Big Picture Event Storming
 
+Allows for horizontal exploration of our business domain. In the end participants can cluster discovered events into
+Bounded Contexts. 
+
 ### Examples
 * [Awesome Eventstorming - Mariusz Gil](https://github.com/mariuszgil/awesome-eventstorming)
 
 ## Process Level Event Storming
 
+## Design Level Event Storming
+
+Allows for exploration of construction elements that in the end will allow to create domain model of the designed solution.
+In DLES we are exploring specific Bounded Contexts and are limited by its boundaries. It is contrary to BPES vertical
+exploration of system being designed.  
+
+Result of DLES:
+* Events --> make us think about the behaviour of the system not its structure. Event can be triggered by Command. They can
+* also be some scheduled activities or being triggered by some other events. 
+* Commands --> are the causes for Events in the system.
+* Actors --> are users of the system that are executing Commands. Actors can be People or other Systems. 
+* Rules --> rules are discovered when looking at the flows of communication starting from an Actor calling Command and then
+finding some business rules that will allow called Command to trigger (or not) specific event or some other event.
+* Policies --> describe that certain domain event can cause other part of the system to be interested in it. E.g. when 
+an event for Activation of an account is triggered the other part of the system that is responsible for sending an invoice
+might need to know this. Policies add separation of concerns in the system. We don't want to have a Activation of an account
+command to do too much including invoicing. 
+* Read Models --> are Views that our system is using to answer specific queries. View is reflection of current system state.
+Which indicates that View is representing all the events that had happened in the system until generation of the View. 
+* Hot Spots --> places in the system being designed where domain experts (business people) are not clear on how the system
+should react or what should it do in this specific case.
+
+### Advantages
+* Very quick discovering of the domain language
+* Good visualization of what is happening and how this is happening in designed system
+* Exploration of particular domain/BC
+
+## Behavior-Driven Development
+
+This is a technique that allows for much better understanding of business problem at hand. This is happening through creation
+of automated examples (tests) that serve as \"live\" documentation of the system. Those automated examples are also a tool
+to guide our Model so it would fulfill all business requirements and would stay simple (would do only what it it required
+to do and nothing more)
+Tools used for BDD in different languages are:
+- Cucumber
+- Spock
+- JBehave
+- Jasmine
+- NBehave
+- Behat
 
 ## Bounded Context
 Bounded Context - Bounded as it has clearly stated boundaries \(borders, lines\). Inside we have Domain Model.
@@ -85,6 +128,31 @@ BCs boundaries by asking questions to the end user about requirements that could
 * [The Bounded Context Explained](http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx)
 * [BoundedContext - Martin Fowler](https://www.martinfowler.com/bliki/BoundedContext.html)
 
+## Implementation Models derived from DLES
+
+### Anemic model 
+
+Model for not very complex Sub-domain (BC). Usually implemented with Layered Application Architecture. Where model reflects
+data structure of our Database and Domain Objects use getters and setters for checking and setting of their state.
+
+### Rich model
+
+Model for complex Sub-domain especially if there are still unknowns (hot spots) and we know that this sub-domain
+will evolve and will be under heavy changes. Rich model usually is best suited when Hexagonal Application Architecture
+is used to implement specific part of the system.
+
+### Aggregate
+
+Collection of Objects that is cohesive and sets the boundaries of transaction is called Aggregate in Tactical DDD.
+Aggregates also verify the immutable parts of the system. Communication with Aggregate is **ONLY** possible via
+object that is called Aggregate Root.
+Aggregate does not have any reference to another Aggregate. During single transaction we must modify only a single
+Aggregate. Aggregates are also units of persistence (they are being saved as a whole) this allows for partitioning and
+much better scalability of the system. 
+Aggregates are being persisted by implementing Repository Pattern. It can be persisted in Relational or Document Database.
+
+Through an Aggregate we put together all the rules that have impact on its state. It is not about particular data (like in DAO)
+it is more about rules that eventually will provide everything for an Aggregate to be cohesive! 
 
 ## Books
 * [Hands-On Domain-Driven Design with .NET Core: Tackling complexity in the heart of software by putting DDD principles into practice - Alexey Zimarev](https://www.amazon.com/Hands-Domain-Driven-Design-NET-ebook/dp/B07C5WSR9B/ref=sr_1_1?crid=KJLST55P7X6P&keywords=hands-on+domain-driven+design+with+.net+core&qid=1563642184&s=books&sprefix=hands-on+domain+dri%2Cstripbooks-intl-ship%2C300&sr=1-1)
@@ -92,6 +160,10 @@ BCs boundaries by asking questions to the end user about requirements that could
 * [Domain-Driven Design: Tackling Complexity in the Heart of Software - Eric Evans](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)
 * [Domain Driven Design Quickly](https://www.infoq.com/minibooks/domain-driven-design-quickly/)
 * [Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F# - Scott Wlaschin](https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven-ebook/dp/B07B44BPFB)
+* [Domain-Driven Design: Tackling Complexity in the Heart of Software](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)
+
+**Event Storming**
+* [Introducing EventStorming - Alberto Brandolini](https://leanpub.com/introducing_eventstorming)
 
 ## Videos
 * [DDD playlist youtube - great content on DDD in one place](https://www.youtube.com/playlist?list=PLC63ae3uCHHYZ2hb_pc6VlQabpi1DS7Yf&app=desktop)
