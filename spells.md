@@ -2,9 +2,21 @@
 
 ## Linux
 
+### File system & disk operations
+
+* ls -t -> 	list files sorts last modified newest on top
+* ls -tr -> same as above reversed
+
 * sudo ln -s /opt/maven/bin/mvn /usr/bin/mvn
 * sudo ln -s /usr/share/groovy/groovy-2.5.7/bin/groovy /usr/bin/groovy
 
+* du -sh /etc/  --> report only the total disk space occupied by a directory tree and to suppress subdirectories
+* du -a -h /etc/ --> same as above + including files not only dirs
+* du -ch *.png --> see the size of each png file in the current directory
+* du -a /etc/ | sort -n -r | head -n 10  --> List top 10 directories eating disk space in /etc/
+
+* df -h  --> report file system disk space usage in human form
+* df -h --total  --> option to have the total
 
 ## SSH connection & file operations
 
@@ -75,11 +87,6 @@
 * grep --exclude-dir={dir1,dir2,*.dst} -rnw 'directory' -e "pattern" -> Just like exclude file it's possible to exclude/include directories through --exclude-dir 
                                                                         and --include-dir parameter, the following shows how to integrate --exclude-dir
 * grep -rl . -e "pattern" -> gives only the file names where pattern is located.																	  
-
-### List files
-
-* ls -t -> 	list files sorts last modified newest on top
-* ls -tr -> same as above reversed
 
 ### Find all unique extensions of files in root and subfolders exclude .git directory
 * find . -type f -path '\*/.git\*' -prune -o -print | sed -rn 's|.\*/\[^/\]+\.(\[^/.\]+)$|\1|p' | sort -u 
