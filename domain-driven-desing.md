@@ -153,6 +153,37 @@ Aggregates are being persisted by implementing Repository Pattern. It can be per
 
 Through an Aggregate we put together all the rules that have impact on its state. It is not about particular data (like in DAO)
 it is more about rules that eventually will provide everything for an Aggregate to be cohesive! 
+Aggregates have full knowledge on how and when generate domain events in the system. Aggregates are responsible for creation
+of domain events (not Domain /Application Services)
+
+## Tactical DDD
+
+### Construction Elements
+
+1. **Behaviour**
+
+* Events
+* Commands
+* Queries (Views)
+* Rules (immutable) and Aggregates
+* Policies
+
+2. Structure
+
+* Values (Value Objects) --> **does not** change in time. It's value is it's identity. VO are attributes that describe
+Entities of our domain.
+* Entities --> entities do change in time although they do have its identity independent from its attributes. Entities
+do have their own life cycle. e.g. a car that gets older, is being repaired and changed its colour its still the same car
+identified by the unique VIN number thus having its identity independent from what changes it went through in its lifecycle.
+* Domain Services --> operations that are not part of either Entities nor Value Objects. Domain Services do not have state
+and are mostly used to encapsulate  algorithms or computations. 
+
+2. Life cycle
+
+* Factories --> being used to reate complex structures. Factories are purely technical notion and are not present in
+our domain. If creation of some Structural elements is complex it could be beneficial to extract it into Factory.
+* Repositories --> their responsibility is to persist (save) and read Entities and its Value Objects. Not present in the
+domain either, purely technical notion. 
 
 ## Books
 * [Hands-On Domain-Driven Design with .NET Core: Tackling complexity in the heart of software by putting DDD principles into practice - Alexey Zimarev](https://www.amazon.com/Hands-Domain-Driven-Design-NET-ebook/dp/B07C5WSR9B/ref=sr_1_1?crid=KJLST55P7X6P&keywords=hands-on+domain-driven+design+with+.net+core&qid=1563642184&s=books&sprefix=hands-on+domain+dri%2Cstripbooks-intl-ship%2C300&sr=1-1)
