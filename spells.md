@@ -108,6 +108,46 @@
 
 ## Docker
 
+### Run containers
+
+* docker ps -> running containers
+* docker ps -a -> all containers
+
+
+* docker exec -it --user root container_name /bin/bash
+* docker exec -it container_name /bin/sh
+* docker run -it --rm -p 8080:8080 --name <container_name> <group_id>/<image_id> /bin/bash
+
+### Containers Images management
+
+* docker pull microsoft/mssql-server-linux -> updates image
+
+* docker rm container_name -> removes docker container
+* docker rmi image_name -> removes docker image from local repository
+
+### Docker Volumes / Files
+
+* docker volume ls -> lists volumes
+
+* docker cp file.txt <container_name>:/directory/file.txt -> copies files from host to container
+* docker cp <container_name>:/directory/file.txt x:\directory\file.txt-> copies files from container to host
+
+### Docker network
+
+* route | awk '/^default/ { print $2 }'  --> execute from within running container to get HOST IP address
+
+### Inspect / monitor / troubleshoot containers
+
+* docker inspect container_name -> shows container data
+
+* docker events -> show what is happening in the container and <container id>
+* docker logs <container id> -> shows logs from failed container
+
+### Docker for Windows:
+
+1. Check that you have the proper credentials setup under Credentials Manager->Windows Credentials->Dockerhost Filesystem Access
+https://forums.docker.com/t/volume-mounts-in-windows-does-not-work/10693/45
+
 ## Git
 
 ### Repository Operations
