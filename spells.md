@@ -7,10 +7,13 @@
 * ls -t -> 	list files sorts last modified newest on top
 * ls -tr -> same as above reversed
 
+* find . -type f -exec dos2unix {} \; --> convert line endings in the whole directory tree
+
 * sudo ln -s /opt/maven/bin/mvn /usr/bin/mvn
 * sudo ln -s /usr/share/groovy/groovy-2.5.7/bin/groovy /usr/bin/groovy
 
 * du -sh /etc/  --> report only the total disk space occupied by a directory tree and to suppress subdirectories
+* du -sh ./*/ --> list out total memory for each subfolder in current path
 * du -a -h /etc/ --> same as above + including files not only dirs
 * du -ch *.png --> see the size of each png file in the current directory
 * du -a /etc/ | sort -n -r | head -n 10  --> List top 10 directories eating disk space in /etc/
@@ -108,6 +111,8 @@
 
 ## Docker
 
+* docker build -t username/repository . 
+
 ### Run containers
 
 * docker ps -> running containers
@@ -160,6 +165,7 @@ https://forums.docker.com/t/volume-mounts-in-windows-does-not-work/10693/45
 
 ### Blogs, adivces
 * [How to mirror a git repo to a new remote](https://makandracards.com/makandra/48818-how-to-mirror-a-git-repo-to-a-new-remote)
+* [Gitkurwa - Jakub Nabrdalik](https://github.com/jakubnabrdalik/gitkurwa)
 
 ## Maven
 

@@ -153,11 +153,14 @@ different BC.
 
 ## ADL & ADR
 Best practices and examples on how to create and maintain Architecture Decision Log and Architecture Decision Records.
+Architecture Guild resources.
 
 ### References
 * [Repository of ADRs templates and howto on GitHub \(1500 start\)](https://github.com/joelparkerhenderson/architecture_decision_record) \
 * [Repository of example ARDs on GitHub \(116 stars\)](https://github.com/arachne-framework/architecture)
 * [Mediawiki ADR examples on GitHub \(27 starts)](https://github.com/wikimedia/mediawiki-extensions-Popups/tree/master/docs/adr)
+* [Architecture guild overview - Jakub Nabrdalik on GitHub](https://github.com/jakubnabrdalik/architecture-guild)
+
 
 ## Estimates (how to do them and when they really work)
 
