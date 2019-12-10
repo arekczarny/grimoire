@@ -112,6 +112,7 @@
 ## Docker
 
 * docker build -t username/repository . 
+* docker build -t username/repository:latest -t username/repository:1.00-0 . --> builds image and tags with latest and specific version
 
 ### Run containers
 
@@ -119,9 +120,9 @@
 * docker ps -a -> all containers
 
 
-* docker exec -it --user root container_name /bin/bash
-* docker exec -it container_name /bin/sh
-* docker run -it --rm -p 8080:8080 --name <container_name> <group_id>/<image_id> /bin/bash
+* docker exec -it --user root username/repository:latest /bin/bash
+* docker exec -it username/repository:latest /bin/sh
+* docker run -it --rm -p 8080:8080 --name <container_name> username/repository:latest /bin/bash
 
 ### Containers Images management
 
