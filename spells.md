@@ -23,6 +23,10 @@
 
 ## SSH connection & file operations
 
+* ssh-add -c mykeypair.pem --> Linux add private key to the authentication agent
+* ssh-add -K mykeypair.pem --> MacOS same as above
+* ssh -A <user>@<host> --> ssh to host machine, then connect to any host that has same private key for authentication
+
 * ssh -i ~/.ssh/id_rsa.pub USER@SERVER
 * scp -i ~/.ssh/id_rsa.pub FILENAME USER@SERVER:/home/USER/FILENAME
 
@@ -163,6 +167,25 @@ https://forums.docker.com/t/volume-mounts-in-windows-does-not-work/10693/45
 * git remote set-url origin https://server:group/project/project.git
 * git remote add origin git@server:group/project/project.git
 * git remote remove origin
+
+### Basic operations
+
+* git checkout <branch_name> --> checks out branch
+* git push --> pushes current branch into remote repository
+
+* git branch -D <feature_branch> --> deletes local <feature_branch>
+* git push origin :feature_branch --> pushes "an empty branch" into origin/feature_branch thus deleting remote branch
+
+
+
+### Merge/Rebase
+* git merge-base <feature_branch> <master> --> find <commit_id> of original base (<master>) for current <feature_branch>
+* git rebase -i <commit_id> --> this will start rebasing from the base on which feature_branch was created
+* git rebase -i HEAD~3 --> if you just want to clean up few latest commits this is useful. Will do rebase from the point where 3rd last commit occurred
+* git rebase -i master --> rebasing current branch onto master branch
+
+* git merge --no-ff <feature_branch> --> merges <feature_branch> into current branch with no fast-forward (with merge commit)
+
 
 ### Blogs, adivces
 * [How to mirror a git repo to a new remote](https://makandracards.com/makandra/48818-how-to-mirror-a-git-repo-to-a-new-remote)
