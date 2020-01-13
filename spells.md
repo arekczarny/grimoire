@@ -186,6 +186,19 @@ https://forums.docker.com/t/volume-mounts-in-windows-does-not-work/10693/45
 
 * git merge --no-ff <feature_branch> --> merges <feature_branch> into current branch with no fast-forward (with merge commit)
 
+### Tagging
+* git tag  -> list tags
+* git show v1.4 -> shows tag data with the commit
+* git tag -a v1.4 -m "my version 1.4" -> creates annotated tag !
+* git tag -a v1.2 9fceb02 -> tag specific commit later 
+* git tag -a 4.4.9.Release_Final -m "Final 4.4.9.Release tag" 706b8e9 -> tag specific commit with comment later 
+* git tag v1.4-lw -> creates lightweight tag
+* git push origin 4.4.5.Release_Final -> push explicite tag
+* git push origin --tags -> all tags pushed
+* git checkout -b version2 v2.0.0 -> checkout tag v2.0.0 into version2 branch
+* git push origin :tagname - removes tagname from origin
+* git push --delete origin tagname - same as above with delete more explicit
+* git tag --delete tagname - delete local tagname
 
 ### Blogs, adivces
 * [How to mirror a git repo to a new remote](https://makandracards.com/makandra/48818-how-to-mirror-a-git-repo-to-a-new-remote)
@@ -201,6 +214,16 @@ https://forums.docker.com/t/volume-mounts-in-windows-does-not-work/10693/45
 * mvn -o dependency:tree -DoutputType=text -DoutputFile=text.txt -Dverbose  --> List of dependeny trees
 * mvn install:install-file -Dfile="X:\some_file-1.0.0.jar" -DgroupId="com.example" 
 -DartifactId=some-artifact -Dversion="1.0.0" -Dpackaging=jar  --> Install 3rd Party dependency to local maven repo
+
+### Maven Surefire Plugin (test)
+
+* mvn -Dtest=TestCircle test --> run a single test class
+* mvn -Dtest=TestCi*le test --> patterns to run a number of tests
+* mvn -Dtest=TestSquare,TestCi*le test --> multiple names/patterns, separated by commas
+* mvn -Dtest=TestCircle#mytest test --> as of Surefire 2.7.3, you can also run only a subset of the tests in a test class
+* mvn -Dtest=TestCircle#test* test --> patterns can also be used
+* mvn -Dtest=TestCircle#testOne+testTwo test --> Since of Surefire Plugin 2.19 you can select multiple methods (JUnit 4, JUnit 4.7+ and TestNG)
+
 
 ### Maven Release Plugin
 
