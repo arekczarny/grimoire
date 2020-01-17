@@ -2,6 +2,11 @@
 
 ## Linux
 
+### Linux kernel checks
+* cat /etc/os-release
+* lsb_release -a
+* uname -r --> Linux kernel version
+
 ### File system & disk operations
 
 * ls -t -> 	list files sorts last modified newest on top
@@ -21,7 +26,7 @@
 * df -h  --> report file system disk space usage in human form
 * df -h --total  --> option to have the total
 
-## SSH connection & file operations
+### SSH connection & file operations
 
 * ssh-add -c mykeypair.pem --> Linux add private key to the authentication agent
 * ssh-add -K mykeypair.pem --> MacOS same as above
@@ -67,14 +72,15 @@
 ### User / Group commands 
 
 * cut -d: -f1 /etc/passwd --> lists all users
-* useradd ĖM Ėg linuxuser Ėd /opt/linuxuser  linuxuser --> creates linuxuser user with /opt/linuxuser as home
+* useradd -c "Linux user" -d /home/linuxuser -u 1000 -g 1000 -m linuxuser --> creates linuxuser user with /opt/linuxuser as home
 
 * userdel USERANME --> removes user from the sytem
-* usermod ĖaG wheel linuxuser --> add user linuxuser to wheel group
+* usermod -aG wheel linuxuser --> add user linuxuser to wheel group
 * gpasswd -a user group --> adds user to a group
 * gpasswd -d user group --> removes user froma group
 
 * groupadd linuxuser --> adds linuxuser group
+* groupadd -g 1000 linuxuser --> adds linuxuser group with groupid 1000
 
 * sudo chgrp -R tomcat /opt/tomcat --> Give the tomcat group ownership over the entire installation directory:
 * sudo chmod -R g+r conf  --> give the tomcat group read access to the conf directory and all of its contents
