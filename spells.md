@@ -69,6 +69,12 @@
 * chkconfig --del myscript --> removes service from chkconfig
 * chkconfig --list | grep myscript  --> linsts chkconfig service
 
+### Linux servivces systemD
+
+* systemctl list-units --type=service --> list all services
+* systemctl stop <service_name>
+* systemctl start <service_name>
+
 ### User / Group commands 
 
 * cut -d: -f1 /etc/passwd --> lists all users
