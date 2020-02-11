@@ -260,10 +260,19 @@ Technical Autonomy enables product teams to separate components depending on:
 * Enables teams to select different programming languages
 * Enables to select different Operating systems
 
+### Distributed Tracing
+
+* B3 Propagation (Zipkin) introduces certain identifiers and headers to make tracing bit more precise and accurate:
+* TraceID --> ID of the whole system workflow
+* SpanID --> identifier of the request
+* ParentSpanID --> identifier of the previous request in the requests chain
+* Sampled --> a 0/1 information if particular trace is being sampled
+* Headers X-B3-{element}
+
 ### Event Driven Systems
 
-### Examples
-*[On Eventual Consistency and REST](http://pillopl.github.io/eventual-consistency-and-rest/)
+#### Examples
+* [On Eventual Consistency and REST](http://pillopl.github.io/eventual-consistency-and-rest/)
 
 #### Books
 * [Designing Event-Driven Systems - Ebook Online](https://www.confluent.io/wp-content/uploads/confluent-designing-event-driven-systems.pdf)
