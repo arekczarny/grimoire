@@ -203,8 +203,8 @@ No Estimates makes Business people very uncomfortable and sort of alienated.
 C4 consist of following parts (abstractions):
 * Code - class / function
 * Component - set of classes that together form a contract
-* Container - run environment for Components e.g. application server / web server / database
-              communication between containers done via API (SOAP/REST/TCP/Messaging)
+* Container - run environment for Components e.g. application server / web server / database communication 
+between containers done via API (SOAP/REST/TCP/Messaging)
 * System - Set of containers forming single system e.g. Browser + App Server + Database
 
 C4 conists of following Diagrams:
