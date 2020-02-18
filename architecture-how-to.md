@@ -232,6 +232,14 @@ C4 conists of following Diagrams:
 #### Tutorials
 * [UML Basics - Polish](https://www.samouczekprogramisty.pl/podstawy-uml/)
 
+### Diagraming tools
+
+* [Diagrams.app](https://diagrams.app/) For MacOS, paid 20$
+* [StarUML 3](http://staruml.io/) Cross OS, 90$
+* [Whimsical](https://whimsical.com/) Online, Flowcharts, Wireframes Free and 10$ month
+* [Lucidchart](https://www.lucidchart.com/pages/) Online, Free + 8$ month. Pretty powerful for all kinds of diagramming
+* [PlantUML](https://plantuml.com/) Online + Java app, free, loads of diagrams covered
+
 ## Architecture general references
 
 ### Autonomy
