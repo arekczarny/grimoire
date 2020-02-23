@@ -1,9 +1,3 @@
-# Test Driven Development (TDD)
-
-## Videos
-
-* [Improving your Test Driven Development in 45 minutes - Jakub Nabrdalik](https://www.youtube.com/watch?v=PwMNtiKb-P4)
-
 # Contract Testing (Consumer Driven Contracts)
 
 * The aim is to test contracts in isolation. We create a contract and test if server implementation meets the contract. 

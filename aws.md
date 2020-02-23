@@ -13,3 +13,8 @@
 ### ECS
 
 ### ECR
+
+### DynamoDB
+* [DynamoDB Transactions Examples](https://www.alexdebrie.com/posts/dynamodb-transactions)
+
+* [7 ways to do async message processing in AWS](https://winterwindsoftware.com/aws-async-message-services)

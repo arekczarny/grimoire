@@ -20,7 +20,8 @@ make some sensible observation of Microservices communication
 * big need for fast and high scalability of the system being build \(already in production\)
 
 
-
+### Blogs / Online Articles
+* [Serverless Microservice Patterns for AWS](https://www.jeremydaly.com/serverless-microservice-patterns-for-aws/)
 ## Videos
 * [Microservices: A Taxonomy - Stefan Tilkov](https://www.youtube.com/watch?time_continue=6&v=iS-f1PfBSzw)
 

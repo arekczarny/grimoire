@@ -271,11 +271,17 @@ Technical Autonomy enables product teams to separate components depending on:
 ### Distributed Tracing
 
 * B3 Propagation (Zipkin) introduces certain identifiers and headers to make tracing bit more precise and accurate:
-* TraceID --> ID of the whole system workflow
-* SpanID --> identifier of the request
-* ParentSpanID --> identifier of the previous request in the requests chain
-* Sampled --> a 0/1 information if particular trace is being sampled
+* TraceID --> ID of the whole system workflow (does not change for the whole workflow)
+* SpanID --> identifier of the specific request (for the first request SpanID == TraceID)
+* ParentSpanID --> identifier of the previous request in the requests chain (SpanID of the system that made a call to our system)
+* Sampled --> a 0/1 information if particular trace is being sampled (if the log data should go to the system responsible for
+gluing all the traces together)
 * Headers X-B3-{element}
+
+#### Blogs / Online Articles
+* [B3 Propagation GitHug](https://github.com/openzipkin/b3-propagation)
+* [Śledzenie komunikacji w systemach rozproszonych - Polish](https://pater.dev/sledzenie-komunikacji-w-systemach-rozproszonych-z-wykorzystaniem-spring-cloud-sleuth-zipkin/)
+* [Distributed Tracing with Spring Cloud Sleuth and Spring Cloud Zipkin](https://spring.io/blog/2016/02/15/distributed-tracing-with-spring-cloud-sleuth-and-spring-cloud-zipkin)
 
 ### Event Driven Systems
 
