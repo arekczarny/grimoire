@@ -10,7 +10,7 @@ We also verify if the contract meets customer requirements.
 * We should be able using Contract to generate tests for the Producer (Server) but also we should be able to generate 
 stubs (of producer/server) to be used in tests of Client(s).
 
-### Products of a Contract
+## Products of a Contract
 
 * Automatically generated tests of the producer (server) that verify it against the Contract.
 * For Server tests we want to test only the Contract (API) so we mock the facade and test only HTTP call.

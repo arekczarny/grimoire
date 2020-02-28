@@ -204,13 +204,19 @@ C4 consist of following parts (abstractions):
 * Code - class / function
 * Component - set of classes that together form a contract
 * Container - run environment for Components e.g. application server / web server / database communication 
-between containers done via API (SOAP/REST/TCP/Messaging)
+between containers done via API (SOAP/REST/TCP/Messaging). Containers could (but not necessarily have to be deployed separately of each other)
 * System - Set of containers forming single system e.g. Browser + App Server + Database
 
 C4 conists of following Diagrams:
-* C1 - Context Diagram - who is using the system, why it was created, what integrations it has what those integrations do
-* C2 - Container Diagram - Container diagram description uses (name, responsibility, technology, interaction, protocol)
-* C3 - Component Diagram - for technical user working on the System.
+* C1 - Context (System) Diagram - who is using the system, why it was created, what integrations it has what those integrations do.
+Description of all the systems (being build and existing systems that are being used by build systems) and its relations to the user(s)
+and itself.  
+* C2 - Container Diagram - Container diagram shows list of all containers of the system we are building. Containers of the sytem could be
+Different API containers, Database, Web Server, Message Broker, Mobile Application etc. Container diagram description uses (name, responsibility, 
+technology, interaction, protocol)
+* C3 - Component Diagram - List of components of particular container of our system e.g. all components that are building our API container.
+Component Diagram is for technical user working on the System implementation. Component diagram description uses (name, responsibility, 
+technology, interaction (sync, async), protocol).
 * C4 - Class Diagram - UML (optional) standard stuff done the old school way
 
 ![Image Link2](https://raw.githubusercontent.com/arekczarny/grimoire/master/pics/c4-example.png "C4 Example")
