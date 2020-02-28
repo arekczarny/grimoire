@@ -1,7 +1,11 @@
 # Table of contents
 
 * [My Book of Spells](README.md)
-* [Architecture Done Right](architecture-how-to.md)
+* [Software Architecture](architecture/REDME.md)
+    * [Architecture Done Right](architecture/architecture-how-to.md)
+    * [System Architecture](architecture/system-architecture.md)
+    * [Application Architecture](architecture/application-architecture.md)
+    * [Document Architecture](architecture/document-architecture.md)
 * [Security](security.md)
 * [Domain Driven Design](domain-driven-desing.md)
 * [Modular Monolith](modular-monolith.md)
