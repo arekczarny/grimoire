@@ -1,6 +1,8 @@
 # REST API
 
-Best practices on how to create REST API.
+Best practices for how to create REST API.
+
+## REST Basics
 
 REST is a REpresentational State Transfer. A standard for HTTP Client-Server communication.
 
@@ -12,12 +14,12 @@ REST has a following constraints:
     4. It's responses are Cachable
     5. Layerd System
     
-* Client Server separation
+**Client Server separation**
 
 This constrain fits well with distributed application structure. In this model Server provides
 functions or services. Client on the other hand initiates requests for those services.
 
-* Stateless 
+**Stateless** 
 
 Each new request should be an independent transaction that is completely unrelated to any previously
 issued request. It might use data coming in response from previous requests but Server should not hold
@@ -29,7 +31,7 @@ as database or distributed cache. This in turn should allow for simplification o
 Both Server and Client should be supporting HTTP 401 Unauthorized to handle cases of session invalidation
 or server holding session in cache going down.
 
-* Caching
+**Caching**
 
 In order to eliminate part of Client-Server communication Server should use appropriate HTTP headers
 and add them to the response in order to describe cache metadata. When such responses are being handled
@@ -37,7 +39,7 @@ by Clients they can be cached and thus do not issue following requests for cache
 Point to note here is that some of the browsers e.g. IE are doing aggressive caching which if not
 handled properly might be source of "dirty reads" of system resources.
 
-* Uniform Interface
+**Uniform Interface**
 
 There are certain factors that determine the uniform interface of a REST service:
 * REST is Resource Based --> resource is identified by URI and its ID
@@ -59,8 +61,6 @@ Location: http://api.dupa.com/users/12345
     } ]
 }
 ```
-
-
 
 ## REST Caching
 
