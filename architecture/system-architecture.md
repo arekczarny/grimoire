@@ -5,7 +5,11 @@ Styles of Software Architecture their advantages and problems.
 
 ## Modular Monolith
 
+[Modular Monolith](architecture/modular-monolith.md)
+
 ## Distributed Systems
+
+[Microservices](architecture/microservices.md)
 
 It's a computer system implemented as a set of independent components that communicate with each other over some
 type of network protocol.
