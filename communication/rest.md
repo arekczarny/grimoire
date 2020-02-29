@@ -62,6 +62,65 @@ Location: http://api.dupa.com/users/12345
 }
 ```
 
+**Layered System**
+
+Client is not aware where it is directly connected to the end Server. There are intermediary network devices through
+which Client's request goes through that might be Load Balancer, Caches, Firewalls, API Gateways etc. 
+
+## REST Design Considerations
+
+### REST Resource Naming
+
+```http://{host}:{port}/{collection}/{id}/{element}```
+* host --> domain of the server hosting REST endpoint
+* port --> port on which REST endpoint is being exposed on the server (could be empty when default HTTP(S))
+* collection --> must be plural e.g. users, books, orders
+* id --> unique identifier of a resource e.g. 12345, DES232WQ, LOT23432
+* element - subordinate element (could be collection) e.g. name, pets, seats
+ 
+Examples:
+```
+http://api.dupa.com/users/12345/name
+http://api.dupa.com/flights/LOT23432
+http://api.dupa.com/flights/LOT23432/seats
+http://api.dupa.com/flights/LOT23432/seats/10C
+```
+**IMPORTANT: DO NOT include operations (verb) in URI (like /flights/LOT23432/cancel)**
+
+### REST HTTP Methods
+
+* GET - retrieve resource
+* POST - create new resource
+* PUT - create resource when client can decide resource URI or update existing resource
+* DELETE - delete resource
+* OPTIONS - resources information
+
+**What are idempotent and/or safe HTTP methods?**
+
+**Idempotent Methods** --> making multiple identical requests has the same effect as making a single request.
+Idempotency is important in building a fault-tolerant API. 
+
+**Safe Methods** --> Calling the method does not modify the resource and cause side effects.  Using GET or HEAD on a resource URL, 
+should NEVER change the resource. Safe methods are methods that can be **cached, prefetched** without any repercussions 
+to the resource.
+```
+HTTP Method | Idempotent | Safe
+OPTIONS     |    yes     |  yes
+GET         |    yes     |  yes
+HEAD        |    yes     |  yes
+PUT         |    yes     |  no
+POST        |    no      |  no
+DELETE      |    yes     |  no
+PATCH       |    no      |  no 
+```
+
+### REST HTTP Status Codes
+
+* 20x - all good bro
+* 30x - don't ask me ask somewhere else
+* 40x - it's your fault bro
+* 50x - sorry it's our fault
+
 ## REST Caching
 
 ## REST Content Negotiation
@@ -79,6 +138,7 @@ Location: http://api.dupa.com/users/12345
 ## REST Security
 
 ### Blogs / Online Articles
+* [REST CookBook](http://restcookbook.com/)
 * [REST Security Cheat Sheet](https://owasp.org/www-project-cheat-sheets/cheatsheets/REST_Security_Cheat_Sheet.html)
 
 ## REST API design check points
