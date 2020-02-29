@@ -70,7 +70,9 @@ which Client's request goes through that might be Load Balancer, Caches, Firewal
 
 ### REST Resource Naming
 
-```http://{host}:{port}/{collection}/{id}/{element}```
+```js
+http://{host}:{port}/{collection}/{id}/{element}
+```
 
 * host --> domain of the server hosting REST endpoint
 * port --> port on which REST endpoint is being exposed on the server (could be empty when default HTTP(S))
@@ -79,7 +81,7 @@ which Client's request goes through that might be Load Balancer, Caches, Firewal
 * element - subordinate element (could be collection) e.g. name, pets, seats
  
 Examples:
-```
+```js
 http://api.dupa.com/users/12345/name
 http://api.dupa.com/flights/LOT23432
 http://api.dupa.com/flights/LOT23432/seats
