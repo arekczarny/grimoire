@@ -66,12 +66,12 @@ Location: http://api.dupa.com/users/12345
 
 Client is not aware where it is directly connected to the end Server. There are intermediary network devices through
 which Client's request goes through that might be Load Balancer, Caches, Firewalls, API Gateways etc. 
-
 ## REST Design Considerations
 
 ### REST Resource Naming
 
 ```http://{host}:{port}/{collection}/{id}/{element}```
+
 * host --> domain of the server hosting REST endpoint
 * port --> port on which REST endpoint is being exposed on the server (could be empty when default HTTP(S))
 * collection --> must be plural e.g. users, books, orders
