@@ -107,6 +107,7 @@ should NEVER change the resource. Safe methods are methods that can be **cached,
 to the resource.
 ```
 HTTP Method | Idempotent | Safe
+-------------------------------
 OPTIONS     |    yes     |  yes
 GET         |    yes     |  yes
 HEAD        |    yes     |  yes
@@ -115,18 +116,15 @@ POST        |    no      |  no
 DELETE      |    yes     |  no
 PATCH       |    no      |  no 
 ```
-
 ### REST HTTP Status Codes
-
-* 20x - all good bro
-* 30x - don't ask me ask somewhere else
-* 40x - it's your fault bro
-* 50x - sorry it's our fault
-
+```
+20x - all good bro
+30x - don't ask me ask somewhere else
+40x - it's your fault bro
+50x - sorry it's our fault
+```
 ## REST Caching
-
 ## REST Content Negotiation
-
 ### HTTP Headers
 * cache-control: public, max-age=0, no-cache
     * public / private (public allows shared caches (LB/FW/CDN))
@@ -136,11 +134,8 @@ PATCH       |    no      |  no
     * s-maxage - all s-* paramters are for shared caches
     
 * Entity Tag (ETag)
-
 ## REST Security
-
 ### Blogs / Online Articles
 * [REST CookBook](http://restcookbook.com/)
 * [REST Security Cheat Sheet](https://owasp.org/www-project-cheat-sheets/cheatsheets/REST_Security_Cheat_Sheet.html)
-
 ## REST API design check points
