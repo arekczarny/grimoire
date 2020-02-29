@@ -134,8 +134,12 @@ PATCH       |    no      |  no
     * s-maxage - all s-* paramters are for shared caches
     
 * Entity Tag (ETag)
+
 ## REST Security
+
 ### Blogs / Online Articles
+
 * [REST CookBook](http://restcookbook.com/)
 * [REST Security Cheat Sheet](https://owasp.org/www-project-cheat-sheets/cheatsheets/REST_Security_Cheat_Sheet.html)
+
 ## REST API design check points
