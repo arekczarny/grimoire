@@ -1,6 +1,10 @@
 # System Architecture styles
 Styles of Software Architecture their advantages and problems.
 
+## Videos / Presentations
+
+* [Architectures That Scale Deep - Regaining Control in Deep Systems by Ben Sigelman](https://www.infoq.com/presentations/properties-deep-systems/)
+
 ## Monolith
 
 ## Modular Monolith
@@ -33,6 +37,11 @@ properly secured!
 * Troubleshooting and Debugging not an easy task
 * Running locally with so many different components again not an easy and pleasant thing to do  
 
-## Videos / Presentations
+## Self-Contained Systems
 
-* [Architectures That Scale Deep - Regaining Control in Deep Systems by Ben Sigelman](https://www.infoq.com/presentations/properties-deep-systems/)
+"The Self-contained System (SCS) approach is an architecture that focuses on a separation of the functionality into many independent systems, 
+making the complete logical system a collaboration of many smaller software systems."
+
+### Blogs / Online Articles
+
+* [Self-contained System (SCS)](https://scs-architecture.org/index.html)

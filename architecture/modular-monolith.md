@@ -41,8 +41,16 @@ rest of the system. When single module is being fixed or changed only this modul
 * much harder to keep the whole solution consistent
 * limited usage of foreign keys
 
+### Blogs / Online Articles
+
+* [Modular Monoliths — A Gateway to Microservices](https://medium.com/design-and-tech-co/modular-monoliths-a-gateway-to-microservices-946f2cbdf382)
+* [Monolith to Modular — Part 2: The Extract Module Use Case](https://dzone.com/articles/monolith-to-modular-part-2-the-extract-module-use-1)
+* [Modular Monolith: Architectural Drivers](http://www.kamilgrzybek.com/design/modular-monolith-architectural-drivers/)
+
 ### Examples
+
 * [Modular Monolith with DDD](https://github.com/kgrzybek/modular-monolith-with-ddd)
+* [Building a Modular Monolith With Spring Boot and Across](https://www.foreach.be/blog/building-a-modular-monolith-with-spring-boot-and-across?lang=nl)
 
 ## Breaking apart the Monolith
 
