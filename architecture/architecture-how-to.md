@@ -9,10 +9,13 @@ Following steps and their output in form of code or documentation will aid this 
 
 ### Describe Architecture Drivers
 
-* Limitations --> specify all limitations that the build system will be constrained with
-* Quality attributes --> Those are **NONE** functional drivers that could cost a lot when moved to later phases of
-system development. Some examples could be: scalability, observability, security, load e.g. 100-150 rps,
-SLA system accessibility 99,99% that is 4m 23s of system downtime per month.
+Describe all Architecture Drivers that would be steering towards particular System Architecture. Later on those
+drivers should also be used to create metrics in order to become measurable.
+
+### Architecture Metrics
+
+Add metrics to previously discovered Architecture Drivers. Metric is quantification of specific driver.
+Metric should provide clear understanding of particular driver meaning.  
 
 ### Select Architecture Style for System
 

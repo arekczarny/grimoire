@@ -38,7 +38,9 @@
 * sensitive to time synchronization issues
 * in case of TGS hash breach. Attacker can act as any user in the system.
 
-## OAuth
+## SAML 2.0
+
+## OAuth 2.0 & OpenID Connect
 
 * [RFC 6749 The OAuth 2.0 Authorization Framework](https://tools.ietf.org/html/rfc6749)
 * [OAuth 2.0 Servers](https://www.oauth.com/)
@@ -47,4 +49,15 @@
 ### Blogs / Online Articles
 
 [Diagrams And Movies Of All The OAuth 2.0 Flows](https://medium.com/@darutk/diagrams-and-movies-of-all-the-oauth-2-0-flows-194f3c3ade85)
+
+## JWT 
+
+## Edge Services
+
+## Securing API
+
+### Blogs / Online Articles
+
+* [API Authorization at Auth0](https://auth0.com/docs/api-auth)
+
 

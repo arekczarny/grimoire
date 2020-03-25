@@ -8,6 +8,11 @@ by specific Classes described below.
 
 ### Classes of Architecture Drivers
 
+* Limitations --> specify all limitations that the build system will be constrained with
+* Quality attributes --> Those are **NONE** functional drivers that could cost a lot when moved to later phases of
+system development. Some examples could be: scalability, observability, security, load e.g. 100-150 rps,
+SLA system accessibility 99,99% that is 4m 23s of system downtime per month.
+
 ### Local Architecture Drivers
 Those Drivers would be considered per e.g. Bounded Context. They would be one of the Classes described above but
 local to a specific BC instead of the whole system.
