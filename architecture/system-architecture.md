@@ -9,11 +9,11 @@ Styles of Software Architecture their advantages and problems.
 
 ## Modular Monolith
 
-[Modular Monolith](architecture/modular-monolith.md)
+[Modular Monolith](modular-monolith.md)
 
 ## Distributed Systems
 
-[Microservices](architecture/microservices.md)
+[Microservices](microservices.md)
 
 It's a computer system implemented as a set of independent components that communicate with each other over some
 type of network protocol.
@@ -21,7 +21,7 @@ type of network protocol.
 **Advantages of Distributed Systems**
 * Scalability - each component of the system can be independently scaled. 
 * Resilience
-* Heterogeneous technology - different tech stack can be used to implement certain components of the system. Here we are 
+* Heterogeneous technology - different tech stack can be used to implement certain components of the system. Here we are
 able to select the best tool/language for the job without being limited by tech stack of other components.
 * Laws & Security - much easier to make Laws compliant of specific isolated components that the whole system. This allows
 for components that must be compliant with certain rules, regulations to be enhanced with specific features without impacting
