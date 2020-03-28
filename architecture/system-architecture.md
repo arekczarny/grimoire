@@ -13,8 +13,6 @@ Styles of Software Architecture their advantages and problems.
 
 ## Distributed Systems
 
-[Microservices](microservices.md)
-
 It's a computer system implemented as a set of independent components that communicate with each other over some
 type of network protocol.
 
@@ -32,6 +30,8 @@ type of network protocol.
 * Making all this secure. Loads of network communication going from one component to another all this needs to be properly secured!
 * Troubleshooting and Debugging not an easy task
 * Running locally with so many different components again not an easy and pleasant thing to do  
+
+[Microservices](microservices.md)
 
 ## Self-Contained Systems
 
