@@ -202,5 +202,6 @@ domain either, purely technical notion.
 * [From legacy to DDD - Andrzej Krzywda - Boiling Frogs 2016](https://www.youtube.com/watch?time_continue=38&v=MzV2vGSTpo8)
 
 ## Examples
+* [Domain-Driven Design Starter Modelling Process](https://github.com/ddd-crew/ddd-starter-modelling-process)
 * [Real DDD project with hands on examples on GitHub - Jakub Pilimon](https://github.com/ddd-by-examples/library)
 * [Modular Monolith with DDD](https://github.com/kgrzybek/modular-monolith-with-ddd)

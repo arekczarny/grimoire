@@ -22,6 +22,9 @@ make some sensible observation of Microservices communication
 
 ### Blogs / Online Articles
 * [Serverless Microservice Patterns for AWS](https://www.jeremydaly.com/serverless-microservice-patterns-for-aws/)
+* [Gasp! You Might Not Need Microservices](https://www.simplethread.com/gasp-you-might-not-need-microservices/)
+* [To Kill a Microservice - From Microservice to Monolith](https://medium.com/botify-labs/to-kill-a-microservice-d6c9e7ad444c)
+
 ## Videos
 * [Microservices: A Taxonomy - Stefan Tilkov](https://www.youtube.com/watch?time_continue=6&v=iS-f1PfBSzw)
 

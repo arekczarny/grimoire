@@ -2,6 +2,12 @@
 
 ## Linux
 
+### Impersonate
+* sudo su --> becoming root when user in sudoers
+* sudo su - root --> becoming root
+* sudo -su user --> becoming user
+* sudo su -s /bin/sh jenkins --> becoming jenkins (service account)
+
 ### Linux kernel checks
 * cat /etc/os-release
 * lsb_release -a
@@ -72,8 +78,14 @@
 ### Linux servivces systemD
 
 * systemctl list-units --type=service --> list all services
-* systemctl stop <service_name>
 * systemctl start <service_name>
+* systemctl stop <service_name>
+* systemctl status <service_name>
+* systemctl enable <service_name> --> enables service_name to start at OS boot
+* systemctl daemon-reload --> reloads SystemD after e.g. adding service file manually
+* /etc/systemd/system/<service_name>.service --> path for systemd unit files
+* /usr/lib/systemd/system/<servivce_name>.service --> Amazon Linux 2 systemd unit files from Amazon Repository
+
 
 ### User / Group commands 
 
@@ -114,6 +126,7 @@
 
 ### Untar \ Unzip  compressed stuff
 
+* zip -r plugins.zip plugins/ --> zips plugins directory (in current location) into plugins.zip file
 * zip -r -s MaximumSize ArchiveName.zip FolderName/
 * tar xvzf maven.tar.gz -C /var/jenkins_home/apache-maven/ -> untar to specified location
 * unzip /usr/share/zip_file.zip -d /home/linuxuser/tmp/build/
@@ -178,6 +191,8 @@ https://forums.docker.com/t/volume-mounts-in-windows-does-not-work/10693/45
 * git remote set-url origin git@server:group/project/project.git
 * git remote set-url origin https://server:group/project/project.git
 * git remote add origin git@server:group/project/project.git
+* git pull origin master
+* git branch --set-upstream-to=origin/master master && git pull
 * git remote remove origin
 
 ### Basic operations

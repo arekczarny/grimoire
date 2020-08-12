@@ -38,6 +38,10 @@
 * sensitive to time synchronization issues
 * in case of TGS hash breach. Attacker can act as any user in the system.
 
+### Blogs / Online Articles
+
+* [What is Strong Authentication?](https://www.okta.com/identity-101/what-is-strong-authentication/)
+
 ## SAML 2.0
 
 ## OAuth 2.0 & OpenID Connect
@@ -49,6 +53,7 @@
 ### Blogs / Online Articles
 
 [Diagrams And Movies Of All The OAuth 2.0 Flows](https://medium.com/@darutk/diagrams-and-movies-of-all-the-oauth-2-0-flows-194f3c3ade85)
+[Wprowadzenie do OAuth 2.0 i OpenID Connect - Aleksander Żelazny](https://www.youtube.com/watch?v=9LRZXg0NK5k&utm_source=jvm-bloggers.com&utm_medium=link&utm_campaign=jvm-bloggers)
 
 ## JWT 
 
@@ -59,5 +64,11 @@
 ### Blogs / Online Articles
 
 * [API Authorization at Auth0](https://auth0.com/docs/api-auth)
+
+## IdM Providers
+
+### Auth0
+
+* [Get Started - Learn the basics of Auth0](https://auth0.com/docs/getting-started)
 
 

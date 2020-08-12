@@ -47,6 +47,9 @@ a need to change others.
 
 ## Hexagonal Architecture
 
+###
+* [Hexagonal Architecture by example - a hands-on introduction - AllegroTech](https://allegro.tech/2020/05/hexagonal-architecture-by-example.html?utm_source=jvm-bloggers.com&utm_medium=link&utm_campaign=jvm-bloggers)
+
 ## Pipes and Filters Architecture
 
 ## Micro core Architecture 
