@@ -18,7 +18,7 @@
 * [Testing Software Goodies](testing/README.md)
     * [Test Driven Development](testing/tdd.md)
     * [Contract Testing (Consumer Driven Contracts)](testing/contract-testing.md)
-* [AWS Cloud](aws.md)
+* [AWS Cloud](aws/aws.md)
 * [Userful Spells](spells.md)
 * [Tech Startup WAR stories](tech-startup-war-stories.md)
 * [Blockchain](blockchain/README.md)
