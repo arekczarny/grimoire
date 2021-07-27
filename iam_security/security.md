@@ -48,7 +48,7 @@
 
 ### Blogs / Online Articles
 
-[Diagrams And Movies Of All The OAuth 2.0 Flows](https://medium.com/@darutk/diagrams-and-movies-of-all-the-oauth-2-0-flows-194f3c3ade85)
+* [Diagrams And Movies Of All The OAuth 2.0 Flows](https://medium.com/@darutk/diagrams-and-movies-of-all-the-oauth-2-0-flows-194f3c3ade85)
 
 ## JWT
 
