@@ -6,13 +6,15 @@ Information, best practices and resources for Spring Reactive development.
 
 ### Spring Reactive
 * [Reactor reference docs - Reactor docs](https://projectreactor.io/docs/core/release/reference/)
-
+* [Spring WebFlux concurrency explained - Baeldung](https://www.baeldung.com/spring-webflux-concurrency)
 
 #### Reactor Parallelism and Backpressure
 * [Hot vs. Cold publishers - Reactor docs](https://projectreactor.io/docs/core/release/reference/#reactor.hotCold)
 * [Creating own Flux - Reactor docs](https://projectreactor.io/docs/core/release/reference/#producing)
 * [Spring’s WebFlux / Reactor Parallelism and Backpressure](https://www.e4developer.com/2018/04/28/springs-webflux-reactor-parallelism-and-backpressure/)
 
+#### Reactive REST API
+* [Build Reactive REST APIs With Spring WebFlux - DZone](https://dzone.com/articles/build-reactive-rest-apis-with-spring-webflux)
 
 #### Documentation
 * [Reactor 3 Reference Guide - Spring](https://projectreactor.io/docs/core/release/reference/index.html)

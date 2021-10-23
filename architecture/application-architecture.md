@@ -47,8 +47,9 @@ a need to change others.
 
 ## Hexagonal Architecture
 
-###
+### Blogs / Online Articles
 * [Hexagonal Architecture by example - a hands-on introduction - AllegroTech](https://allegro.tech/2020/05/hexagonal-architecture-by-example.html?utm_source=jvm-bloggers.com&utm_medium=link&utm_campaign=jvm-bloggers)
+* [Hexagonal Architecture in Java Simplified](https://huseyinbabal.com/2021/10/15/hexagonal-architecture-in-java-simplified/)
 
 ## Pipes and Filters Architecture
 
