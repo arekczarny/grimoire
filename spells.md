@@ -271,6 +271,15 @@ https://forums.docker.com/t/volume-mounts-in-windows-does-not-work/10693/45
 
 * mvn --batch-mode -P release release:update-versions -DdevelopmentVersion=1.1.0-SNAPSHOT
 
+## RabbitMQ
+
+Create a new credentials using command line and use it to connect to RabbitMQ.
+
+* $ rabbitmqctl add_user <USERNAME> <PASSWORD>
+* $ rabbitmqctl set_user_tags <USERNAME> administrator
+* $ rabbitmqctl set_permissions -p / <USERNAME> ".*" ".*" ".*"
+
+
 ## MacOS
 
 ### Shortcuts

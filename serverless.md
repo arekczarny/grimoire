@@ -12,7 +12,7 @@
 * [Use AWS X-Ray to reach Least Privilege](https://github.com/functionalone/aws-least-privilege)
 * [OWASP Serverless Top 10](https://owasp.org/www-project-serverless-top-10/)
 * [Serverless-Dev-Tools by Theodo-UK](https://theodo-uk.github.io/sls-dev-tools/)
-
+  
 ### Blogs / Online Articles
 * [Don't be SecureLess: by Ben Ellerby](https://www.youtube.com/watch?v=qhIzUHvllGw)
 * [The API Gateway security risk you need to pay attention to](https://theburningmonk.com/2019/10/the-api-gateway-security-flaw-you-need-to-pay-attention-to/)
