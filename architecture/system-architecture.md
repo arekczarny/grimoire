@@ -1,6 +1,10 @@
 # System Architecture styles
 Styles of Software Architecture their advantages and problems.
 
+## Blogs / Online Articles
+
+* [Awesome Software Architecture](https://awesome-architecture.com/)
+
 ## Videos / Presentations
 
 * [Architectures That Scale Deep - Regaining Control in Deep Systems by Ben Sigelman](https://www.infoq.com/presentations/properties-deep-systems/)
